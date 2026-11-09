@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanil | DevOps Engineer</title>
+  <meta name="description" content="Shanil's DevOps engineering portfolio">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #e5e7eb;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1080px, 90%); margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: #0b1020ee; backdrop-filter: blur(12px);
+      border-bottom: 1px solid #253047;
+    }
+    nav {
+      min-height: 72px; display: flex;
+      justify-content: space-between; align-items: center;
+      gap: 20px;
+    }
+    .logo { font-size: 24px; font-weight: bold; }
+    .logo span, .accent { color: #67e8f9; }
+    .nav-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    .nav-links a:hover { color: #67e8f9; }
+    .hero { padding: 110px 0 95px; }
+    .eyebrow { color: #67e8f9; letter-spacing: 3px; font-size: 13px; }
+    h1 { font-size: clamp(42px, 8vw, 76px); line-height: 1.15; margin: 15px 0; }
+    h2 { font-size: 32px; margin-bottom: 20px; }
+    .subtitle { color: #a5b4fc; font-size: clamp(20px, 3vw, 28px); }
+    .intro { max-width: 670px; color: #aab6ca; margin: 20px 0 28px; }
+    .btn {
+      display: inline-block; padding: 12px 20px; border-radius: 8px;
+      background: #67e8f9; color: #0b1020; font-weight: bold;
+      margin: 5px 8px 5px 0; border: 1px solid #67e8f9;
+    }
+    .btn.secondary { background: transparent; color: #67e8f9; }
+    section { padding: 75px 0; }
+    .muted { color: #aab6ca; }
+    .grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 18px; margin-top: 25px;
+    }
+    .card {
+      padding: 24px; background: #111a2e;
+      border: 1px solid #26344c; border-radius: 14px;
+    }
+    .card h3 { margin-bottom: 10px; color: #f8fafc; }
+    .card p { color: #aab6ca; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .skills span {
+      background: #172554; color: #bfdbfe; padding: 8px 13px;
+      border-radius: 7px; border: 1px solid #263b68;
+    }
+    .contact-card {
+      padding: 30px; background: #111a2e;
+      border: 1px solid #26344c; border-radius: 14px;
+    }
+    footer { border-top: 1px solid #253047; padding: 25px 0; color: #94a3b8; }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      nav { padding: 15px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { gap: 13px; font-size: 14px; }
+      .hero { padding: 75px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">shanil<span>.dev</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <p class="eyebrow">HELLO, WORLD! I'M</p>
+      <h1>Shanil<span class="accent">.</span></h1>
+      <p class="subtitle">DevOps Engineer</p>
+      <p class="intro">
+        I build automated workflows, reliable cloud infrastructure,
+        and scalable deployment pipelines. Passionate about automation,
+        Linux, cloud technologies, and modern DevOps practices.
+      </p>
+      <a class="btn" href="#projects">Explore My Projects</a>
+      <a class="btn secondary" href="#contact">Get In Touch</a>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me<span class="accent">.</span></h2>
+        <p class="muted">
+          I'm Shanil, a DevOps engineer focused on bridging development
+          and operations. I enjoy automating repetitive tasks, improving
+          deployment processes, managing infrastructure as code, and
+          building systems that are reliable and maintainable.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Technical Skills<span class="accent">.</span></h2>
+        <p class="muted">Technologies I use or am learning.</p>
+        <div class="skills">
+          <span>Linux</span><span>Git & GitHub</span>
+          <span>Docker</span><span>Kubernetes</span>
+          <span>AWS</span><span>Jenkins</span>
+          <span>GitHub Actions</span><span>Terraform</span>
+          <span>Bash</span><span>Python</span>
+          <span>CI/CD</span><span>Monitoring</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Featured Projects<span class="accent">.</span></h2>
+        <p class="muted">Replace these examples with your real projects.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>CI/CD Automation</h3>
+            <p>Example: automate application builds, tests,
+              and deployments using Jenkins or GitHub Actions.</p>
+            <p class="accent">Jenkins · Git · CI/CD</p>
+          </article>
+          <article class="card">
+            <h3>Containerized Application</h3>
+            <p>Example: package an application with Docker
+              and deploy it using a container orchestration platform.</p>
+            <p class="accent">Docker · Kubernetes</p>
+          </article>
+          <article class="card">
+            <h3>Cloud Infrastructure</h3>
+            <p>Example: provision reusable cloud infrastructure
+              with version-controlled configuration.</p>
+            <p class="accent">AWS · Terraform</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <h2>Let's Connect<span class="accent">.</span></h2>
+          <p class="muted">
+            Looking for DevOps opportunities or collaboration?
+            I'd be happy to connect.
+          </p>
+          <!-- Replace with your real contact details -->
+          <a class="btn" href="mailto:your-email@example.com">
+            Email Me
+          </a>
+          <a class="btn secondary"
+             href="https://www.linkedin.com/"
+             target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a class="btn secondary"
+             href="https://github.com/"
+             target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Shanil · DevOps Engineer
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
